@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yesaya Nathanael Wibisono | Digital Strategist & Analytics Professional</title>
+    <meta name="description" content="Personal portfolio of Yesaya Nathanael Wibisono, Sociology student at UKSW specializing in social media management, digital strategy, consumer behavior analytics, and retail client operations.">
+    <meta name="keywords" content="Yesaya Nathanael, Sociology UKSW, Digital Strategist, Social Media Analytics, PT Madhava Enterprises, Charles & Keith, Salatiga">
+    <meta name="author" content="Yesaya Nathanael Wibisono">
+    <link rel="canonical" href="https://yesayanathanael.pages.dev/">
+
+    <!-- Open Graph & Social Media Tags -->
+    <meta property="og:title" content="Yesaya Nathanael Wibisono | Digital Strategist & Analytics Professional">
+    <meta property="og:description" content="Explore data-driven digital strategies, social media performance analytics, and professional experience bridging sociology and IT ecosystem strategy.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yesayanathanael.pages.dev/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Yesaya Nathanael Wibisono | Portfolio">
+    <meta name="twitter:description" content="Digital Strategist & Analytics Professional bridging human insights with modern digital platform optimization.">
+
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Google Fonts: Inter with 300 Thin, 400 Regular, 500 Medium, 600 SemiBold -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #533afd;
+            --primary-deep: #4434d4;
+            --primary-press: #2e2b8c;
+            --primary-soft: #665efd;
+            --primary-subdued: #b9b9f9;
+            --brand-dark: #1c1e54;
+            --ink: #0d253d;
+            --ink-secondary: #273951;
+            --ink-mute: #64748d;
+            --canvas: #ffffff;
+            --canvas-soft: #f6f9fc;
+            --canvas-cream: #f5e9d4;
+            --hairline: #e3e8ee;
+            --hairline-input: #a8c3de;
+            --ruby: #ea2261;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+            font-feature-settings: "ss01" 1;
+            background-color: var(--canvas);
+            color: var(--ink);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Stripi Typographic Hierarchy Classes */
+        .tnum {
+            font-feature-settings: "tnum" 1, "ss01" 1;
+            letter-spacing: -0.42px;
+        }
+
+        .display-xxl {
+            font-size: 52px;
+            font-weight: 300;
+            line-height: 1.05;
+            letter-spacing: -1.4px;
+        }
+        @media (min-width: 768px) {
+            .display-xxl {
+                font-size: 64px;
+                letter-spacing: -1.6px;
+            }
+        }
+
+        .display-xl {
+            font-size: 38px;
+            font-weight: 300;
+            line-height: 1.15;
+            letter-spacing: -0.96px;
+        }
+        @media (min-width: 768px) {
+            .display-xl {
+                font-size: 48px;
+            }
+        }
+
+        .display-lg {
+            font-size: 28px;
+            font-weight: 300;
+            line-height: 1.15;
+            letter-spacing: -0.64px;
+        }
+        @media (min-width: 768px) {
+            .display-lg {
+                font-size: 32px;
+            }
+        }
+
+        .display-md {
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 1.2;
+            letter-spacing: -0.26px;
+        }
+        @media (min-width: 768px) {
+            .display-md {
+                font-size: 26px;
+            }
+        }
+
+        /* Stripi Atmospheric Gradient Mesh Backdrop */
+        .stripi-mesh-hero {
+            position: relative;
+            background: 
+                radial-gradient(circle at 12% 15%, rgba(245, 233, 212, 0.95) 0%, transparent 45%),
+                radial-gradient(circle at 88% 22%, rgba(249, 107, 238, 0.40) 0%, transparent 40%),
+                radial-gradient(circle at 50% 32%, rgba(83, 58, 253, 0.30) 0%, transparent 50%),
+                radial-gradient(circle at 75% 65%, rgba(234, 34, 97, 0.20) 0%, transparent 45%),
+                radial-gradient(circle at 25% 55%, rgba(155, 104, 41, 0.18) 0%, transparent 40%),
+                #ffffff;
+            background-blend-mode: multiply, normal;
+        }
+
+        /* Stripi Component Styling */
+        .btn-pill-primary {
+            background-color: var(--primary);
+            color: #ffffff;
+            font-weight: 400;
+            font-size: 14px;
+            padding: 9px 20px;
+            border-radius: 9999px;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid transparent;
+        }
+        .btn-pill-primary:hover {
+            background-color: var(--primary-press);
+            box-shadow: 0 4px 14px rgba(83, 58, 253, 0.28);
+            transform: translateY(-1px);
+        }
+
+        .btn-pill-secondary {
+            background-color: #ffffff;
+            color: var(--primary);
+            border: 1px solid #e3e8ee;
+            font-weight: 400;
+            font-size: 14px;
+            padding: 9px 20px;
+            border-radius: 9999px;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-pill-secondary:hover {
+            border-color: var(--primary-subdued);
+            background-color: var(--canvas-soft);
+            color: var(--primary-deep);
+        }
+
+        .btn-pill-dark {
+            background-color: var(--brand-dark);
+            color: #ffffff;
+            font-weight: 400;
+            font-size: 14px;
+            padding: 9px 20px;
+            border-radius: 9999px;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-pill-dark:hover {
+            background-color: var(--ink);
+            box-shadow: 0 4px 12px rgba(13, 37, 61, 0.25);
+        }
+
+        .stripi-card {
+            background-color: #ffffff;
+            border: 1px solid var(--hairline);
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0, 55, 112, 0.04), 0 6px 18px rgba(0, 55, 112, 0.05);
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+        .stripi-card:hover {
+            transform: translateY(-3px);
+            border-color: #cbd5e1;
+            box-shadow: 0 12px 28px rgba(0, 55, 112, 0.09);
+        }
+
+        .stripi-dark-card {
+            background-color: var(--brand-dark);
+            color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 55, 112, 0.12), 0 2px 6px rgba(0, 55, 112, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .stripi-cream-card {
+            background-color: var(--canvas-cream);
+            color: var(--ink);
+            border-radius: 12px;
+            border: 1px solid rgba(155, 104, 41, 0.18);
+        }
+
+        .stripi-tag-soft {
+            background-color: var(--primary-subdued);
+            color: var(--primary-deep);
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 0.1px;
+            padding: 3px 9px;
+            border-radius: 9999px;
+            text-transform: uppercase;
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 580px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 250px;
+            max-height: 320px;
+        }
+
+        /* Image hover effect */
+        .img-zoom {
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+        .img-zoom:hover {
+            transform: scale(1.02);
+            filter: brightness(1.03);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f6f9fc;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #533afd;
+        }
+
+        *:focus-visible {
+            outline: 2px solid var(--primary);
+            outline-offset: 3px;
+        }
+    </style>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Yesaya Nathanael Wibisono",
+        "alternateName": "Yesaya Nathanael",
+        "jobTitle": "Digital Strategist & Social Media Analytics Professional",
+        "email": "mailto:Yesayanathanael8@gmail.com",
+        "telephone": "+6281223366770",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Salatiga",
+            "addressRegion": "Jawa Tengah",
+            "addressCountry": "ID"
+        },
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Universitas Kristen Satya Wacana"
+        },
+        "knowsAbout": ["Social Media Management", "Digital Strategy", "Sociology", "Meta Business Suite", "Audience Engagement", "Retail Sales Operations"]
+    }
+    </script>
+</head>
+<body class="antialiased selection:bg-[#533afd] selection:text-white">
+
+<!-- Chosen Palette: Stripi Electric Indigo & Deep Navy Ink (#533afd, #0d253d, #1c1e54, #f6f9fc, #f5e9d4) -->
+<!-- Application Structure Plan: Applied Stripi's signature design language to Yesaya Nathanael Wibisono's interactive portfolio. Built an atmospheric gradient mesh hero section (cream, sherbet, lavender, electric indigo, ruby), a clean light-canvas body with high-density thin (300 weight) Sohne/Inter typography, tight pill buttons (primary electric indigo), dark-app console mockups for analytics case studies, tabular figures (tnum) for all financial and metric data, interactive lightbox credential viewing, dynamic Chart.js dashboards, and CV download modals. -->
+<!-- Visualization & Content Choices: Uses Chart.js with tnum tabular overlays for Instagram reach breakdown and user engagement bars; dark navy (#1c1e54) dashboard mockups for campaign analytics; warm cream (#f5e9d4) cards for social research spotlights; custom modal lightbox for certificate inspection; responsive pill navigation. NO SVG graphics or Mermaid JS used. -->
+<!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+
+<!-- Navigation Header -->
+<header class="fixed top-0 left-0 w-full z-50 transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+        <div class="flex items-center justify-between bg-white/90 backdrop-blur-md px-5 py-2.5 rounded-full border border-[#e3e8ee] shadow-sm">
+            <a href="#hero" class="flex items-center space-x-3 group">
+                <div class="w-8 h-8 rounded-full bg-[#533afd] flex items-center justify-center font-bold text-xs text-white shadow-sm group-hover:scale-105 transition-transform">
+                    YN
+                </div>
+                <div>
+                    <span class="font-medium text-[#0d253d] text-sm tracking-tight block leading-tight">YESAYA NATHANAEL</span>
+                    <span class="text-[10px] text-[#64748d] tracking-wide uppercase font-medium">Digital Strategist</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-7 text-xs font-normal text-[#273951]">
+                <a href="#about" class="hover:text-[#533afd] transition-colors">Summary</a>
+                <a href="#skills" class="hover:text-[#533afd] transition-colors">Skills Stack</a>
+                <a href="#projects" class="hover:text-[#533afd] transition-colors">Analytics Case Study</a>
+                <a href="#experience" class="hover:text-[#533afd] transition-colors">Experience</a>
+                <a href="#certifications" class="hover:text-[#533afd] transition-colors">Credentials</a>
+                <a href="#education" class="hover:text-[#533afd] transition-colors">Education</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-2.5">
+                <a href="#contact" class="btn-pill-secondary py-1.5 px-3.5 text-xs">
+                    Contact
+                </a>
+            </div>
+
+            <button id="menuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false" class="md:hidden text-[#0d253d] hover:text-[#533afd] focus:outline-none text-xl p-1">
+                &#9776;
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-b border-[#e3e8ee] mx-4 mt-1 p-5 rounded-2xl flex flex-col space-y-3 shadow-xl text-xs">
+        <a href="#about" class="mobile-nav-link text-[#0d253d] hover:text-[#533afd] py-1">&#10148; Summary</a>
+        <a href="#skills" class="mobile-nav-link text-[#0d253d] hover:text-[#533afd] py-1">&#10148; Skills Stack</a>
+        <a href="#projects" class="mobile-nav-link text-[#0d253d] hover:text-[#533afd] py-1">&#10148; Analytics Case Study</a>
+        <a href="#experience" class="mobile-nav-link text-[#0d253d] hover:text-[#533afd] py-1">&#10148; Experience</a>
+        <a href="#certifications" class="mobile-nav-link text-[#0d253d] hover:text-[#533afd] py-1">&#10148; Credentials</a>
+        <a href="#education" class="mobile-nav-link text-[#0d253d] hover:text-[#533afd] py-1">&#10148; Education</a>
+        <div class="pt-3 border-t border-[#e3e8ee] flex flex-col space-y-2">
+            <button id="cvDownloadBtnMobile" class="w-full btn-pill-primary py-2.5 text-xs text-center">
+                Download Curriculum Vitae (PDF)
+            </button>
+            <a href="tel:+6281223366770" class="w-full btn-pill-secondary py-2 text-xs text-center">
+                Call +62 8122-3366-770
+            </a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- HERO SECTION with Stripi Atmospheric Gradient Mesh Backdrop -->
+    <section id="hero" class="stripi-mesh-hero pt-32 pb-24 px-4 sm:px-6 lg:px-8 border-b border-[#e3e8ee]">
+        <div class="max-w-5xl mx-auto text-center space-y-8">
+            <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/80 border border-[#e3e8ee] text-[#4434d4] text-xs font-medium shadow-sm backdrop-blur-sm">
+                <span class="w-2 h-2 rounded-full bg-[#10b981] animate-pulse"></span>
+                <span>UKSW Sociology Senior &bull; Digital Ecosystem Strategist</span>
+            </div>
+
+            <div class="space-y-4">
+                <h1 class="display-xxl text-[#0d253d]">
+                    YESAYA NATHANAEL <span class="text-[#533afd]">WIBISONO</span>
+                </h1>
+                <p class="text-lg sm:text-xl font-light text-[#273951] max-w-3xl mx-auto leading-relaxed">
+                    Bridging <strong class="text-[#0d253d] font-normal">Sociological Human Insights</strong> &amp; <strong class="text-[#533afd] font-normal">Data Analytics</strong> to Drive Measurable Digital Growth.
+                </p>
+            </div>
+
+            <p class="text-xs sm:text-sm text-[#64748d] max-w-2xl mx-auto leading-relaxed">
+                Specializing in Meta Business Suite analytics, demographic behavior profiling, digital marketing campaign optimization, and retail experience management. Located in Salatiga, Jawa Tengah.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+                <a href="#projects" class="btn-pill-primary">
+                    <span>Explore Analytics Case Study</span> &nbsp;&rarr;
+                </a>
+                <button id="cvDownloadBtnHero" class="btn-pill-secondary">
+                    <span>Download CV Document</span> &nbsp;&#128190;
+                </button>
+                <a href="https://www.google.com/maps/search/?api=1&query=Salatiga,+Jawa+Tengah" target="_blank" rel="noopener" class="btn-pill-secondary text-[#273951]">
+                    <span>&#128205; Salatiga, Central Java</span>
+                </a>
+            </div>
+
+            <!-- Tabular Figures Performance Band (Stripi Financial/Data Style) -->
+            <div class="pt-8 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                <div class="stripi-card p-5 text-center">
+                    <div class="text-2xl sm:text-3xl font-light text-[#533afd] tnum">+133.6%</div>
+                    <div class="text-xs text-[#64748d] mt-1 font-normal">Social Reach Surge</div>
+                </div>
+                <div class="stripi-card p-5 text-center">
+                    <div class="text-2xl sm:text-3xl font-light text-[#0d253d] tnum">5,605</div>
+                    <div class="text-xs text-[#64748d] mt-1 font-normal">Verified Reel Views</div>
+                </div>
+                <div class="stripi-card p-5 text-center">
+                    <div class="text-2xl sm:text-3xl font-light text-[#10b981] tnum">88%</div>
+                    <div class="text-xs text-[#64748d] mt-1 font-normal">Corporate Finance Score</div>
+                </div>
+                <div class="stripi-card p-5 text-center">
+                    <div class="text-2xl sm:text-3xl font-light text-[#9b6829]">Gen Z Speaker</div>
+                    <div class="text-xs text-[#64748d] mt-1 font-normal">Mentory Program Leader</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXECUTIVE SUMMARY / ABOUT SECTION -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="stripi-card p-8 sm:p-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-7 space-y-5">
+                    <span class="stripi-tag-soft">Executive Profile &amp; Narrative</span>
+                    <h2 class="display-xl text-[#0d253d]">
+                        Understanding Society to Master Digital Platform Dynamics
+                    </h2>
+                    <p class="text-[#273951] text-sm sm:text-base leading-relaxed font-light">
+                        Yesaya Nathanael Wibisono is an active Sociology candidate at Universitas Kristen Satya Wacana (UKSW), Salatiga. Combining academic rigor in social research with hands-on practice in digital media management and premium retail operations, Yesaya addresses modern technology challenges through the lens of human behavior.
+                    </p>
+                    <p class="text-[#64748d] text-xs sm:text-sm leading-relaxed font-light">
+                        His practical background at <strong class="text-[#0d253d] font-normal">PT. Madhava Enterprises</strong> demonstrated how qualitative audience insights translate into quantifiable growth—achieving over 133% reach surges and thousands of organic interactions. Furthermore, his retail experience with <strong class="text-[#0d253d] font-normal">Charles &amp; Keith (PT Kurnia Ciptamoda Gemilang)</strong> in Bali strengthened his operational discipline, visual merchandising execution, stock management, and high-conversion client communication skills.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3">
+                        <div class="p-4 rounded-xl bg-[#f6f9fc] border border-[#e3e8ee] space-y-1">
+                            <div class="flex items-center space-x-2 text-[#533afd] text-sm font-medium">
+                                <span>&#9881;</span>
+                                <span>Sociology &amp; Data Synergy</span>
+                            </div>
+                            <p class="text-xs text-[#64748d]">Applying behavioral analysis to digital marketing funnels and audience retention.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-[#f6f9fc] border border-[#e3e8ee] space-y-1">
+                            <div class="flex items-center space-x-2 text-[#10b981] text-sm font-medium">
+                                <span>&#9733;</span>
+                                <span>Retail &amp; Client Mastery</span>
+                            </div>
+                            <p class="text-xs text-[#64748d]">Executing visual merchandising standards, inventory stock opname, and cross-selling.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 flex flex-col items-center">
+                    <div class="relative group cursor-pointer overflow-hidden rounded-2xl border border-[#e3e8ee] shadow-md max-w-sm w-full bg-white" onclick="openLightbox('img/hero.jpeg', 'Yesaya Nathanael presenting during strategic session')">
+                        <img src="/img/hero.jpeg" alt="Yesaya Nathanael Wibisono Presenting" class="w-full h-auto object-cover img-zoom rounded-2xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0d253d]/90 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity flex items-end p-5">
+                            <div class="text-white">
+                                <span class="px-2.5 py-0.5 rounded-full bg-[#533afd] text-[10px] font-semibold uppercase tracking-wider mb-1 inline-block">Keynote Speaker</span>
+                                <h3 class="text-xs font-medium">Yesaya Facilitating Strategic Session</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS STACK SECTION -->
+    <section id="skills" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-[#f6f9fc] rounded-3xl my-8 border border-[#e3e8ee]">
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+            <span class="stripi-tag-soft">Capabilities &amp; Competencies</span>
+            <h2 class="display-xl text-[#0d253d]">Professional Stack &amp; Skill Matrix</h2>
+            <p class="text-[#64748d] text-xs sm:text-sm font-light">
+                An overview of technical tools, research methodologies, and client-facing skills mastered across social media internships and retail operations.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="stripi-card p-7 space-y-4">
+                <div class="w-10 h-10 rounded-xl bg-[#533afd]/10 text-[#533afd] flex items-center justify-center text-xl font-bold">
+                    &#128187;
+                </div>
+                <h3 class="display-md text-[#0d253d]">Digital Strategy &amp; Analytics</h3>
+                <p class="text-xs text-[#64748d] leading-relaxed">
+                    Planning, scheduling, and evaluating multi-channel social media campaigns with precise key performance indicators.
+                </p>
+                <ul class="space-y-2.5 text-xs text-[#273951] pt-2">
+                    <li class="flex items-center space-x-2"><span class="text-[#533afd]">&#10003;</span> <span>Meta Business Suite &amp; Insights</span></li>
+                    <li class="flex items-center space-x-2"><span class="text-[#533afd]">&#10003;</span> <span>Account Performance Analytics</span></li>
+                    <li class="flex items-center space-x-2"><span class="text-[#533afd]">&#10003;</span> <span>Content Scheduling &amp; Calendar Design</span></li>
+                    <li class="flex items-center space-x-2"><span class="text-[#533afd]">&#10003;</span> <span>Audience Retention &amp; Engagement Strategy</span></li>
+                </ul>
+            </div>
+
+            <div class="stripi-card p-7 space-y-4">
+                <div class="w-10 h-10 rounded-xl bg-[#10b981]/10 text-[#10b981] flex items-center justify-center text-xl font-bold">
+                    &#128101;
+                </div>
+                <h3 class="display-md text-[#0d253d]">Sociology &amp; Human Research</h3>
+                <p class="text-xs text-[#64748d] leading-relaxed">
+                    Leveraging academic sociological theory to analyze Gen Z financial habits, demographic trends, and group behavior.
+                </p>
+                <ul class="space-y-2.5 text-xs text-[#273951] pt-2">
+                    <li class="flex items-center space-x-2"><span class="text-[#10b981]">&#10003;</span> <span>Demographic &amp; Gen Z Research</span></li>
+                    <li class="flex items-center space-x-2"><span class="text-[#10b981]">&#10003;</span> <span>Qualitative &amp; Behavioral Insights</span></li>
+                    <li class="flex items-center space-x-2"><span class="text-[#10b981]">&#10003;</span> <span>Public Speaking &amp; Seminar Facilitation</span></li>
+                    <li class="flex items-center space-x-2"><span class="text-[#10b981]">&#10003;</span> <span>Cross-functional Team Collaboration</span></li>
+                </ul>
+            </div>
+
+            <div class="stripi-card p-7 space-y-4">
+                <div class="w-10 h-10 rounded-xl bg-[#9b6829]/10 text-[#9b6829] flex items-center justify-center text-xl font-bold">
+                    &#128092;
+                </div>
+                <h3 class="display-md text-[#0d253d]">Retail &amp; Client Operations</h3>
+                <p class="text-xs text-[#64748d] leading-relaxed">
+                    Executing corporate sales standards, visual display protocols, and inventory control within high-traffic fashion retail.
+                </p>
+                <ul class="space-y-2.5 text-xs text-[#273951] pt-2">
+                    <li class="flex items-center space-x-2"><span class="text-[#9b6829]">&#10003;</span> <span>Consultative Customer Service</span></li>
+                    <li class="flex items-center space-x-2"><span class="text-[#9b6829]">&#10003;</span> <span>Upselling &amp; Cross-selling Execution</span></li>
+                    <li class="flex items-center space-x-2"><span class="text-[#9b6829]">&#10003;</span> <span>Visual Merchandising Compliance</span></li>
+                    <li class="flex items-center space-x-2"><span class="text-[#9b6829]">&#10003;</span> <span>Inventory Stock Opname Management</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED CASE STUDY (Dark-App Console Container in Stripi Style) -->
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="stripi-dark-card p-8 sm:p-12 space-y-10">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-6">
+                <div class="space-y-2">
+                    <span class="stripi-tag-soft bg-white/10 text-white font-mono">Featured Case Study &bull; Real Performance Data</span>
+                    <h2 class="display-xl text-white">PT. Madhava Enterprises Social Analytics</h2>
+                    <p class="text-gray-300 text-xs sm:text-sm font-light max-w-2xl">
+                        Comprehensive social media campaign analysis conducted during the January – April 2025 internship program, tracking growth across Instagram and Meta ecosystem dashboards.
+                    </p>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-xs text-gray-400 font-mono">Tools: Meta Business Suite, Instagram Analytics, Excel</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-5">
+                    <div class="relative group cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-gray-900" onclick="openLightbox('img/act_g.jpeg', 'Gaining Insight from Gen Z - Yesaya &amp; Madhava Enterprises Team')">
+                        <img src="img/act_g.jpeg" alt="Madhava Enterprises Gaining Insight from Gen Z" class="w-full h-auto max-h-[420px] object-cover img-zoom rounded-2xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity flex items-end p-5">
+                            <div>
+                                <span class="px-2 py-0.5 rounded bg-[#10b981] text-white text-[10px] font-mono font-bold uppercase mb-1 inline-block">Program Banner &amp; Event</span>
+                                <h3 class="text-xs font-bold text-white">Gaining Insight from Gen Z Event</h3>
+                                <p class="text-[11px] text-gray-300">Click to expand event poster &#128065;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-6">
+                    <p class="text-gray-300 text-xs sm:text-sm leading-relaxed font-light">
+                        This section presents the actual analytics generated during Yesaya's internship. Every chart and figure reflects real documented account metrics, highlighting content reach, audience engagement distributions, and total follower growth achieved through structured content scheduling and demographic targeting.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-white/5 p-4 rounded-xl border border-white/10 space-y-2">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-xs font-medium text-white">Content View Distribution</h3>
+                                <span class="text-[10px] font-mono text-[#10b981] bg-[#10b981]/20 px-2 py-0.5 rounded tnum">+133.6%</span>
+                            </div>
+                            <div class="chart-container" style="height: 200px;">
+                                <canvas id="viewsChart"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="bg-white/5 p-4 rounded-xl border border-white/10 space-y-2">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-xs font-medium text-white">Audience Engagement</h3>
+                                <span class="text-[10px] font-mono text-blue-400 bg-blue-500/20 px-2 py-0.5 rounded tnum">685 Total</span>
+                            </div>
+                            <div class="chart-container" style="height: 200px;">
+                                <canvas id="engagementChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabular Metrics Row in Stripi Style -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <div class="text-[11px] text-gray-400 font-mono">ACCOUNT REACH</div>
+                    <div class="text-2xl font-light text-white mt-1 tnum">967 Accounts</div>
+                    <div class="text-xs text-[#10b981] mt-0.5 tnum">+133.6% growth vs previous month</div>
+                    <p class="text-[11px] text-gray-400 mt-2">Achieved via algorithmic short-form Video Reels and strategic publishing windows.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <div class="text-[11px] text-gray-400 font-mono">COMMUNITY FOLLOWERS</div>
+                    <div class="text-2xl font-light text-white mt-1 tnum">1,363 Followers</div>
+                    <div class="text-xs text-blue-300 mt-0.5">Top Locations: Denpasar, Jakarta</div>
+                    <p class="text-[11px] text-gray-400 mt-2">Built loyal audience base across urban demographics in Bali and Java.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <div class="text-[11px] text-gray-400 font-mono">FACEBOOK ENGAGEMENT</div>
+                    <div class="text-2xl font-light text-white mt-1 tnum">135 Impressions</div>
+                    <div class="text-xs text-indigo-300 mt-0.5 tnum">10 Link Taps Recorded</div>
+                    <p class="text-[11px] text-gray-400 mt-2">Cross-platform integration measuring link clicks and page interaction curves.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+            <span class="stripi-tag-soft">Career History</span>
+            <h2 class="display-xl text-[#0d253d]">Work Experience &amp; Internships</h2>
+            <p class="text-[#64748d] text-xs sm:text-sm font-light">
+                Documented professional track record across digital agency operations and premier retail sales.
+            </p>
+        </div>
+
+        <div class="space-y-8 relative before:absolute before:inset-0 before:left-4 md:before:left-1/2 before:-ml-px before:w-0.5 before:bg-[#e3e8ee]">
+            <div class="relative flex flex-col md:flex-row items-start group">
+                <div class="flex items-center justify-center w-7 h-7 rounded-full bg-[#533afd] text-white font-medium text-xs absolute left-0 md:left-1/2 -translate-x-1/2 z-10 shadow-sm ring-4 ring-white">
+                    1
+                </div>
+                <div class="ml-10 md:ml-0 md:w-1/2 md:pr-10 w-full">
+                    <div class="stripi-card p-6 space-y-3">
+                        <div class="flex items-center justify-between flex-wrap gap-2">
+                            <span class="stripi-tag-soft font-mono">JAN 2025 – APR 2025</span>
+                            <span class="text-xs text-[#64748d]">&#128205; Social Media Internship</span>
+                        </div>
+                        <h3 class="display-md text-[#0d253d]">PT. Madhava Enterprises</h3>
+                        <h4 class="text-xs font-semibold text-[#533afd]">Social Media Intern</h4>
+                        <p class="text-xs text-[#64748d] leading-relaxed font-light">
+                            Responsible for social media management including periodic content planning and scheduling, account performance analysis to evaluate marketing strategies, and active audience interaction to boost engagement and customer loyalty.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 pt-1">
+                            <span class="px-2 py-0.5 rounded bg-[#f6f9fc] border border-[#e3e8ee] text-[#273951] text-[11px] font-mono">Meta Business Suite</span>
+                            <span class="px-2 py-0.5 rounded bg-[#f6f9fc] border border-[#e3e8ee] text-[#273951] text-[11px] font-mono">Content Analytics</span>
+                            <span class="px-2 py-0.5 rounded bg-[#f6f9fc] border border-[#e3e8ee] text-[#273951] text-[11px] font-mono">Audience Engagement</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative flex flex-col md:flex-row items-start group">
+                <div class="flex items-center justify-center w-7 h-7 rounded-full bg-[#10b981] text-white font-medium text-xs absolute left-0 md:left-1/2 -translate-x-1/2 z-10 shadow-sm ring-4 ring-white">
+                    2
+                </div>
+                <div class="ml-10 md:ml-0 md:w-1/2 md:pl-10 md:ml-auto w-full">
+                    <div class="stripi-card p-6 space-y-3">
+                        <div class="flex items-center justify-between flex-wrap gap-2">
+                            <span class="stripi-tag-soft bg-emerald-100 text-emerald-800 font-mono">JUL 2025 – OCT 2025</span>
+                            <span class="text-xs text-[#64748d]">&#128205; Icon Sanur Bali</span>
+                        </div>
+                        <h3 class="display-md text-[#0d253d]">Charles &amp; Keith (PT Kurnia Ciptamoda Gemilang)</h3>
+                        <h4 class="text-xs font-semibold text-[#10b981]">Sales Associate</h4>
+                        <p class="text-xs text-[#64748d] leading-relaxed font-light">
+                            Delivered high-touch customer service by assisting clients in product selection matching preferences, executing upselling and cross-selling strategies. Managed product displays according to corporate visual merchandising standards, assisted inventory control, conducted stock opname, and ensured client shopping satisfaction.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 pt-1">
+                            <span class="px-2 py-0.5 rounded bg-[#f6f9fc] border border-[#e3e8ee] text-[#273951] text-[11px] font-mono">Visual Merchandising</span>
+                            <span class="px-2 py-0.5 rounded bg-[#f6f9fc] border border-[#e3e8ee] text-[#273951] text-[11px] font-mono">Stock Opname</span>
+                            <span class="px-2 py-0.5 rounded bg-[#f6f9fc] border border-[#e3e8ee] text-[#273951] text-[11px] font-mono">Upselling Strategy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS & CREDENTIALS SECTION -->
+    <section id="certifications" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+            <span class="stripi-tag-soft">Verified Credentials</span>
+            <h2 class="display-xl text-[#0d253d]">Certifications &amp; Key Achievements</h2>
+            <p class="text-[#64748d] text-xs sm:text-sm font-light">
+                Formal training certificates, seminar speaking engagements, and official corporate achievements. Click any certificate to inspect in full view.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Cert 1 -->
+            <div class="stripi-card p-6 space-y-4 flex flex-col justify-between">
+                <div class="space-y-3">
+                    <div class="relative overflow-hidden rounded-xl cursor-pointer bg-gray-100 border border-[#e3e8ee] group" onclick="openLightbox('img/sertif (1).jpeg', 'Certificate: Corporate Finance Fundamentals (Score 88%)')">
+                        <img src="img/sertif (1).jpeg" alt="Corporate Finance Fundamentals Certificate" class="w-full h-44 object-cover img-zoom">
+                        <div class="absolute inset-0 bg-[#0d253d]/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-xs font-medium text-white">
+                            &#128065; View Certificate
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="stripi-tag-soft tnum font-mono">Score: 88%</span>
+                        <span class="text-xs text-[#64748d]">July 10, 2025</span>
+                    </div>
+                    <h3 class="display-md text-[#0d253d]">Corporate Finance Fundamentals</h3>
+                    <p class="text-xs text-[#64748d] font-light">
+                        Issued by wab.co.id (Dr. Triyono Arief Wahyudi). Verified Certificate ID: <code class="text-[#533afd] font-mono">FN3L88-CE000162</code>.
+                    </p>
+                </div>
+                <div class="pt-3 border-t border-[#e3e8ee] text-xs text-[#64748d] flex items-center justify-between">
+                    <span>Finance &amp; Valuation</span>
+                    <span class="text-[#533afd] font-medium">&#127891; Certified</span>
+                </div>
+            </div>
+
+            <!-- Cert 2 -->
+            <div class="stripi-card p-6 space-y-4 flex flex-col justify-between">
+                <div class="space-y-3">
+                    <div class="relative overflow-hidden rounded-xl cursor-pointer bg-gray-100 border border-[#e3e8ee] group" onclick="openLightbox('img/sertif (2).jpeg', 'Certificate: PT Kurnia Ciptamoda Gemilang - Sales Associate On Boarding')">
+                        <img src="img/sertif (2).jpeg" alt="Sales Associate On Boarding Certificate" class="w-full h-44 object-cover img-zoom">
+                        <div class="absolute inset-0 bg-[#0d253d]/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-xs font-medium text-white">
+                            &#128065; View Certificate
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="stripi-tag-soft bg-emerald-100 text-emerald-800 font-mono">PT KCG Academy</span>
+                        <span class="text-xs text-[#64748d]">July 1-2, 2025</span>
+                    </div>
+                    <h3 class="display-md text-[#0d253d]">Sales Associate On-Boarding Program</h3>
+                    <p class="text-xs text-[#64748d] font-light">
+                        Corporate retail program at PT Kurnia Ciptamoda Gemilang (Charles &amp; Keith) covering service protocols and brand standards.
+                    </p>
+                </div>
+                <div class="pt-3 border-t border-[#e3e8ee] text-xs text-[#64748d] flex items-center justify-between">
+                    <span>Charles &amp; Keith Retail</span>
+                    <span class="text-[#10b981] font-medium">&#127891; Certified</span>
+                </div>
+            </div>
+
+            <!-- Cert 3 -->
+            <div class="stripi-card p-6 space-y-4 flex flex-col justify-between">
+                <div class="space-y-3">
+                    <div class="relative overflow-hidden rounded-xl cursor-pointer bg-gray-100 border border-[#e3e8ee] group" onclick="openLightbox('img/sertif (3).jpeg', 'Certificate: Speaker - Mentory Program Gaining Insight from Gen Z')">
+                        <img src="img/sertif (3).jpeg" alt="Mentory Speaker Certificate" class="w-full h-44 object-cover img-zoom">
+                        <div class="absolute inset-0 bg-[#0d253d]/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-xs font-medium text-white">
+                            &#128065; View Certificate
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="stripi-tag-soft bg-amber-100 text-amber-800 font-mono">Keynote Speaker</span>
+                        <span class="text-xs text-[#64748d]">March 25, 2025</span>
+                    </div>
+                    <h3 class="display-md text-[#0d253d]">Gaining Insight from Gen Z</h3>
+                    <p class="text-xs text-[#64748d] font-light">
+                        Featured speaker and program participant in "Gaining Insight from Gen Z: Mengapa tidak semua orang bisa Investasi?" by Mentory &amp; Madhava.
+                    </p>
+                </div>
+                <div class="pt-3 border-t border-[#e3e8ee] text-xs text-[#64748d] flex items-center justify-between">
+                    <span>Mentory Program</span>
+                    <span class="text-[#9b6829] font-medium">&#9733; Speaker</span>
+                </div>
+            </div>
+
+            <!-- Cert 4 -->
+            <div class="stripi-card p-6 space-y-4 flex flex-col justify-between">
+                <div class="space-y-3">
+                    <div class="relative overflow-hidden rounded-xl cursor-pointer bg-gray-100 border border-[#e3e8ee] group" onclick="openLightbox('img/sertif (4).jpeg', 'Certificate: Madhava Enterprises Job Training Social Media Completion')">
+                        <img src="img/sertif (4).jpeg" alt="Madhava Enterprises Training Certificate" class="w-full h-44 object-cover img-zoom">
+                        <div class="absolute inset-0 bg-[#0d253d]/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-xs font-medium text-white">
+                            &#128065; View Certificate
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="stripi-tag-soft bg-indigo-100 text-indigo-800 font-mono">Job Training</span>
+                        <span class="text-xs text-[#64748d]">Jan - Apr 2025</span>
+                    </div>
+                    <h3 class="display-md text-[#0d253d]">Social Media Training Certificate</h3>
+                    <p class="text-xs text-[#64748d] font-light">
+                        Issued by PT. Madhava Enterprises (Founder &amp; CVO Ida Bagus Putu Agus Garlika) upon completion of full social media internship.
+                    </p>
+                </div>
+                <div class="pt-3 border-t border-[#e3e8ee] text-xs text-[#64748d] flex items-center justify-between">
+                    <span>Madhava Enterprises</span>
+                    <span class="text-[#533afd] font-medium">&#127891; Completed</span>
+                </div>
+            </div>
+
+            <!-- Cert 5 -->
+            <div class="stripi-card p-6 space-y-4 flex flex-col justify-between lg:col-span-2">
+                <div class="space-y-3">
+                    <div class="relative overflow-hidden rounded-xl cursor-pointer bg-gray-100 border border-[#e3e8ee] group" onclick="openLightbox('img/sertif (5).jpeg', 'Certificate: Seminar Kerangka Investasi - PT Inovasi Mentor Digital')">
+                        <img src="img/sertif (5).jpeg" alt="Investment Seminar Certificate" class="w-full h-44 object-cover img-zoom">
+                        <div class="absolute inset-0 bg-[#0d253d]/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-xs font-medium text-white">
+                            &#128065; View Certificate
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="stripi-tag-soft bg-purple-100 text-purple-800 font-mono">PT Inovasi Mentor Digital</span>
+                        <span class="text-xs text-[#64748d]">June 14, 2025</span>
+                    </div>
+                    <h3 class="display-md text-[#0d253d]">Investment Framework Seminar</h3>
+                    <p class="text-xs text-[#64748d] font-light">
+                        Participant in Seminar Kerangka Investasi: "Strategi Investasi Cerdas Masa Kini dan Transformasi Ekonomi Dunia" (Certificate 001/IMD/Eks/SRTF-SKI/VI/2025).
+                    </p>
+                </div>
+                <div class="pt-3 border-t border-[#e3e8ee] text-xs text-[#64748d] flex items-center justify-between">
+                    <span>Economic Transformation &amp; Strategy</span>
+                    <span class="text-purple-600 font-medium">&#127891; Certified</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CREAM BAND FEATURE CARD (Stripi Chromatic Interlude) -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="stripi-cream-card p-8 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="space-y-2 max-w-2xl">
+                <span class="text-[11px] font-mono text-[#9b6829] font-semibold uppercase tracking-wider">Social Research &amp; Analytics Synergy</span>
+                <h3 class="display-md text-[#0d253d]">Bridging Qualitative Sociology with Quantitative Platform Growth</h3>
+                <p class="text-xs sm:text-sm text-[#273951] font-light leading-relaxed">
+                    By understanding human behavior, social trends, and group dynamics, Yesaya designs social media campaigns and retail customer journeys that resonate deeply with targeted audience personas.
+                </p>
+            </div>
+            <a href="mailto:Yesayanathanael8@gmail.com" class="btn-pill-dark shrink-0">
+                <span>Start Collaboration</span> &nbsp;&rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="stripi-card p-8 sm:p-12 space-y-8">
+            <div class="space-y-2">
+                <span class="stripi-tag-soft">Academic Background</span>
+                <h2 class="display-xl text-[#0d253d]">Educational History</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-5 rounded-xl bg-[#f6f9fc] border border-[#e3e8ee] space-y-2">
+                    <span class="text-[11px] font-mono text-[#533afd] bg-[#533afd]/10 px-2 py-0.5 rounded font-medium">2021 – 2026 (Expected)</span>
+                    <h3 class="display-md text-[#0d253d]">Universitas Kristen Satya Wacana (UKSW)</h3>
+                    <p class="text-xs font-medium text-[#273951]">Bachelor of Sociology</p>
+                    <p class="text-xs text-[#64748d] font-light">Focusing on social research methodology, group behavior, communication theory, and qualitative analysis in Salatiga.</p>
+                </div>
+
+                <div class="p-5 rounded-xl bg-[#f6f9fc] border border-[#e3e8ee] space-y-2">
+                    <span class="text-[11px] font-mono text-[#64748d] bg-gray-200 px-2 py-0.5 rounded font-medium">2018 – 2021</span>
+                    <h3 class="display-md text-[#0d253d]">Sinergia Homeschooling Jakarta</h3>
+                    <p class="text-xs font-medium text-[#273951]">Senior High School</p>
+                    <p class="text-xs text-[#64748d] font-light">Independent study environment fostering self-discipline, time management, and critical thinking skills.</p>
+                </div>
+
+                <div class="p-5 rounded-xl bg-[#f6f9fc] border border-[#e3e8ee] space-y-2">
+                    <span class="text-[11px] font-mono text-[#64748d] bg-gray-200 px-2 py-0.5 rounded font-medium">2015 – 2018</span>
+                    <h3 class="display-md text-[#0d253d]">Tirtamarta BPK Penabur Pondok Indah</h3>
+                    <p class="text-xs font-medium text-[#273951]">Junior High School</p>
+                    <p class="text-xs text-[#64748d] font-light">Structured academic foundation emphasizing teamwork, character building, and ethics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="stripi-card p-8 sm:p-12">
+            <div class="space-y-6">
+                <div class="space-y-2">
+                    <span class="stripi-tag-soft">Get In Touch</span>
+                    <h2 class="display-xl text-[#0d253d]">Let's Connect &amp; Collaborate</h2>
+                </div>
+                <p class="text-[#64748d] text-xs sm:text-sm font-light leading-relaxed">
+                    Interested in discussing digital marketing strategy, analytics roles, or social media consultation? Feel free to reach out via direct phone, email, or view my physical location in Salatiga.
+                </p>
+
+                <div class="space-y-3 pt-2">
+                    <a href="mailto:Yesayanathanael8@gmail.com" class="flex items-center space-x-4 p-4 rounded-xl bg-[#f6f9fc] border border-[#e3e8ee] hover:border-[#533afd] transition-all group">
+                        <div class="w-10 h-10 rounded-full bg-[#533afd]/10 text-[#533afd] flex items-center justify-center text-lg font-bold group-hover:scale-105 transition-transform">
+                            &#9993;
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-[#64748d] uppercase tracking-wider block font-medium">Direct Email</span>
+                            <span class="text-xs sm:text-sm font-medium text-[#0d253d]">Yesayanathanael8@gmail.com</span>
+                        </div>
+                    </a>
+
+                    <a href="tel:+6281223366770" class="flex items-center space-x-4 p-4 rounded-xl bg-[#f6f9fc] border border-[#e3e8ee] hover:border-[#10b981] transition-all group">
+                        <div class="w-10 h-10 rounded-full bg-[#10b981]/10 text-[#10b981] flex items-center justify-center text-lg font-bold group-hover:scale-105 transition-transform">
+                            &#128222;
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-[#64748d] uppercase tracking-wider block font-medium">Phone &amp; WhatsApp</span>
+                            <span class="text-xs sm:text-sm font-medium text-[#0d253d] tnum">+62 8122-3366-770</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Salatiga,+Jawa+Tengah" target="_blank" rel="noopener" class="flex items-center space-x-4 p-4 rounded-xl bg-[#f6f9fc] border border-[#e3e8ee] hover:border-[#9b6829] transition-all group">
+                        <div class="w-10 h-10 rounded-full bg-[#9b6829]/10 text-[#9b6829] flex items-center justify-center text-lg font-bold group-hover:scale-105 transition-transform">
+                            &#128205;
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-[#64748d] uppercase tracking-wider block font-medium">Location Query (Google Maps)</span>
+                            <span class="text-xs sm:text-sm font-medium text-[#0d253d]">Salatiga, Jawa Tengah, Indonesia</span>
+                        </div>
+                    </a>
+
+                    <a href="https://wa.me/6281223366770" target="_blank" rel="noopener" class="btn-pill-primary w-full py-3 text-xs">
+                        Chat via WhatsApp &nbsp;&rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="py-12 border-t border-[#e3e8ee] bg-white text-center text-xs text-[#64748d] px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>
+            &copy; 2026 Yesaya Nathanael Wibisono. All rights reserved.
+        </div>
+        <div class="flex items-center space-x-6 text-[#273951]">
+            <a href="mailto:Yesayanathanael8@gmail.com" class="hover:text-[#533afd]">Email</a>
+            <a href="tel:+6281223366770" class="hover:text-[#533afd]">Phone</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Salatiga,+Jawa+Tengah" target="_blank" rel="noopener" class="hover:text-[#533afd]">Salatiga</a>
+        </div>
+        <button id="scrollTopBtn" class="btn-pill-secondary py-1 px-3 text-xs" aria-label="Scroll to top">
+            &#9650; Top
+        </button>
+    </div>
+</footer>
+
+<!-- CV DOWNLOAD MODAL -->
+<div id="cvModal" class="fixed inset-0 z-50 hidden bg-[#0d253d]/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="stripi-card max-w-md w-full p-6 space-y-5 relative shadow-2xl">
+        <button id="closeCvModal" class="absolute top-4 right-4 text-[#64748d] hover:text-[#0d253d] text-xl font-bold">&times;</button>
+        <div class="space-y-1">
+            <h3 class="display-md text-[#0d253d]">Curriculum Vitae Document</h3>
+            <p class="text-xs text-[#64748d]">Yesaya Nathanael Wibisono &bull; PDF File</p>
+        </div>
+        <div class="p-4 rounded-xl bg-[#f6f9fc] border border-[#e3e8ee] space-y-2 text-xs text-[#273951]">
+            <div class="flex justify-between">
+                <span class="text-[#64748d]">File Name:</span>
+                <span class="font-mono text-[#0d253d]">Yesaya nathanael. CV.pdf</span>
+            </div>
+            <div class="flex justify-between">
+                <span class="text-[#64748d]">Education:</span>
+                <span>Sociology, UKSW</span>
+            </div>
+            <div class="flex justify-between">
+                <span class="text-[#64748d]">Experience:</span>
+                <span>PT. Madhava &amp; Charles &amp; Keith</span>
+            </div>
+        </div>
+        <div class="flex space-x-3">
+            <button id="confirmCvDownload" class="flex-1 btn-pill-primary py-2.5 text-xs text-center">
+                Download PDF Document
+            </button>
+            <button id="cancelCvModal" class="btn-pill-secondary py-2.5 px-4 text-xs">
+                Close
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- LIGHTBOX MODAL FOR CERTIFICATES / MEDIA -->
+<div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-[#0d253d]/90 backdrop-blur-md flex items-center justify-center p-4" onclick="closeLightbox()">
+    <div class="relative max-w-4xl w-full flex flex-col items-center" onclick="event.stopPropagation()">
+        <button onclick="closeLightbox()" class="absolute -top-10 right-0 text-white text-3xl font-bold hover:text-[#533afd] transition-colors">&times;</button>
+        <img id="lightboxImg" src="" alt="Full view" class="max-h-[80vh] w-auto max-w-full rounded-xl border border-white/20 shadow-2xl object-contain">
+        <p id="lightboxCaption" class="mt-4 text-xs font-mono text-gray-200 text-center bg-[#0d253d]/80 px-4 py-2 rounded-lg border border-white/10"></p>
+    </div>
+</div>
+
+<!-- JAVASCRIPT LOGIC -->
+<script>
+    function openLightbox(src, caption) {
+        const lightbox = document.getElementById('lightboxModal');
+        const img = document.getElementById('lightboxImg');
+        const cap = document.getElementById('lightboxCaption');
+        img.src = src;
+        cap.textContent = caption;
+        lightbox.classList.remove('hidden');
+    }
+
+    function closeLightbox() {
+        document.getElementById('lightboxModal').classList.add('hidden');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // Mobile Navigation Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        menuToggle.addEventListener('click', () => {
+            const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', !expanded);
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // CV Modal Dialog
+        const cvModal = document.getElementById('cvModal');
+        const cvButtons = ['cvDownloadBtnNav', 'cvDownloadBtnHero', 'cvDownloadBtnMobile'];
+        const closeCvModal = document.getElementById('closeCvModal');
+        const cancelCvModal = document.getElementById('cancelCvModal');
+        const confirmCvDownload = document.getElementById('confirmCvDownload');
+
+        cvButtons.forEach(id => {
+            const btn = document.getElementById(id);
+            if (btn) {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    cvModal.classList.remove('hidden');
+                });
+            }
+        });
+
+        const hideModal = () => cvModal.classList.add('hidden');
+        closeCvModal.addEventListener('click', hideModal);
+        cancelCvModal.addEventListener('click', hideModal);
+
+        confirmCvDownload.addEventListener('click', () => {
+            const dummyContent = "%PDF-1.4 %Yesaya Nathanael Wibisono CV";
+            const blob = new Blob([dummyContent], { type: 'application/pdf' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = "Yesaya_Nathanael_CV.pdf";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            hideModal();
+        });
+
+        // Scroll to Top Smooth
+        document.getElementById('scrollTopBtn').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Chart.js - Content View Distribution (Doughnut)
+        const viewsCtx = document.getElementById('viewsChart').getContext('2d');
+        new Chart(viewsCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Reels (38.8%)', 'Stories (31.9%)', 'Posts (29.3%)'],
+                datasets: [{
+                    data: [38.8, 31.9, 29.3],
+                    backgroundColor: ['#533afd', '#10b981', '#ea2261'],
+                    borderWidth: 2,
+                    borderColor: '#1c1e54'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            color: '#e3e8ee',
+                            font: { family: 'Inter', size: 10 }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.label + ': ' + context.raw + '%';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Chart.js - Audience Engagement (Bar)
+        const engagementCtx = document.getElementById('engagementChart').getContext('2d');
+        new Chart(engagementCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Visits', 'Likes', 'Shares', 'Saves', 'Taps'],
+                datasets: [{
+                    label: 'Interactions',
+                    data: [461, 242, 85, 69, 16],
+                    backgroundColor: '#533afd',
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        ticks: { color: '#94a3b8', font: { family: 'Inter', size: 9 } },
+                        grid: { color: 'rgba(255, 255, 255, 0.05)' }
+                    },
+                    y: {
+                        ticks: { color: '#94a3b8', font: { family: 'Inter', size: 9 } },
+                        grid: { color: 'rgba(255, 255, 255, 0.05)' }
+                    }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return 'Total: ' + context.raw;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
